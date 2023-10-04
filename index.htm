@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- links of BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Index page</title>
+</head>
+
+<body class="bg-dark-subtle">
+
+    <style>
+        /* capitalize text  */
+        .cptlise {
+            text-transform: capitalize;
+        }
+
+        /* text upper-case  */
+        .upcase {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #fc770b;">
+        <div class="container-fluid cptlise">
+            <a class="navbar-brand fw-bold" href="#">online attendance management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse cptlise" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item cptlise">
+                        <a class="nav-link active " aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact us.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-bs-toggle="collapse" data-bs-target="#collapseWidthlogin"
+                            aria-expanded="false" aria-controls="collapseWidthlogin">login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login card  -->
+    <div class="container-fluid px-4">
+        <div class="row gx-3">
+            <div class="col my-auto">
+                <div class="p-2">
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal mt-4 " id="collapseWidthlogin">
+                            <div class="card card-body mx-auto "
+                                style="width: 500px; border-color: #fc770b; border-width: 3px ;">
+                                <p class="mx-auto mb-2 my-2 fw-bold fs-3 cptlise">login</p>
+                                <form class="was-validated cptlise">
+                                    <div class="mb-3 my-4">
+                                        <label for="validationText" class="form-label fs-4">username</label>
+                                        <input class="form-control" id="validationText" placeholder="" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your username
+                                        </div>
+                                    </div>
+                                    <div class="form mb-3">
+                                        <label for="validationForm1" class="form-label fs-4">password</label>
+                                        <input type="password" class="form-control" id="validationForm1" required>
+                                        <div class="invalid-feedback">Plase enter your password</div>
+                                    </div>
+                                    <div class="mb-6 d-flex justify-content-center p-2">
+                                        <button class="btn btn-primary fs-5" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- college image  -->
+            <div class="col" >
+                <div class="p-2">
+                    <img src="clgimg.jpg" class="rounded float-end" alt="not loaded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
